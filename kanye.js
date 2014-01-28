@@ -40,5 +40,4 @@ var awe_shit_bitch = function() {
 	canvas.onmousemove = mouseMove;
 };
 
-
 document.addEventListener('DOMContentLoaded', awe_shit_bitch);

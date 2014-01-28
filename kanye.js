@@ -5,7 +5,7 @@ var awe_shit_bitch = function() {
 	function resetCanvas() {
 		// Set canvas to white
 		ctx.fillStyle = "rgb(255, 255, 255)";
-		ctx.fillRect (10, 10, 55, 50);
+		ctx.fillRect (0, 0, window.innerWidth, window.innerHeight);
 	}
 
 	function resizeCanvas() {
@@ -22,6 +22,7 @@ var awe_shit_bitch = function() {
 	var img_h = 347;
 	var img = document.getElementById("kanye_img");
 
+	var mouse_offset = 100;
 
 	function mouseMove(e) {
 		if (e.offsetX) {
@@ -33,7 +34,7 @@ var awe_shit_bitch = function() {
 			mouseY = e.layerY;
 		}
 
-		ctx.drawImage(img, mouseX , mouseY, img_w, img_h);
+		ctx.drawImage(img, mouseX - mouse_offset, mouseY - mouse_offset, img_w, img_h);
 	}
 
 	// Bind to mouse move

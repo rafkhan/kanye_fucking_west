@@ -38,7 +38,7 @@ var awe_shit_bitch = function() {
 	}
 
 	// Bind to mouse move
-	canvas.onmousemove = mouseMove;
+	window.onmousemove = mouseMove;
 };
 
 document.addEventListener('DOMContentLoaded', awe_shit_bitch);
